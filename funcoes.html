@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var primeira = function(){
+			console.log("1 - antes");
+			segunda();
+			console.log("1 - depois");
+		};
+
+		var segunda = function(){
+			console.log("2 - antes");
+			terceira();
+			console.log("2 - depois");
+		};
+
+		var terceira = function () {
+			console.log("3");
+			document.write("kkk");
+		};
+		primeira();
+	</script>
+</body>
+</html>

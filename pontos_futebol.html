@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+	function pulaLinha () {
+		document.write("<br>");
+	}
+
+
+	function mostra (frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var vitorias = prompt("Quantos Jogos o CDC FC Venceu ?");
+	var empates = prompt("Quantos Jogos o CDC FC Empatou ?");
+	var pontos = (vitorias * 3) + parseInt(empates);
+	var vitoriasADV = prompt("Quantos Jogos os Livros Velhos venceram");
+	var empatesADV = prompt("Quantos empates os Livros Velhos empataram");
+	var pontosADV = (vitoriasADV * 3) + parseInt(empatesADV);
+
+
+	mostra("Nosso time tem "+pontos+" pontos!");
+	if(pontos > 28){
+		mostra("O Nosso time está indo MELHOR que os Livros Velhos");
+	}
+	if(pontos < 28){
+		mostra("O Nosso TIME está indo PIOR que os Livros Velhos");
+	}
+	if (pontos == 28){
+		mostra("O Nosso time está EMPATADO com os Livros Velhos");	
+	};
+
+	</script>
+</body>
+</html>

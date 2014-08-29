@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	var peso = 55;
+	var altura = 1.72;
+	
+
+	
+	var pulaLinha = function() {
+		document.write("<br>");
+	}
+
+	var mostra = function(frase) {
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var calculaIMC = function(altura, peso){
+		var imc = peso / (altura * altura);
+		return imc;
+	}
+	var nome = prompt("Qual seu Nome?");
+	var pesoPrimo = prompt("Bom Dia "+nome+", Qual seu Peso?");
+	var alturaPrimo = prompt("Qual sua Altura?");
+
+	var IMCprimo = calculaIMC(alturaPrimo, pesoPrimo);
+	mostra("IMC do primo calculado foi: "+IMCprimo);
+
+
+
+
+	mostra("Ele ainda está "+(IMCprimo - 18.5)+" pontos acima do limite da magreza");
+	mostra("Ele ainda está " +(35 - IMCprimo)+ " pontos do obesidade severa");
+	
+	
+
+	
+	
+
+	</script>
+</body>
+</html>
